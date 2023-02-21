@@ -25,7 +25,7 @@ describe('Testing de la utilidad comparePassword', () => {
         done()
     }) 
     it('Deberia retornar false en caso de que no pasemos nada', (done) => {
-        const response = comparePassword(null, null)
+        const response = comparePassword('', '')
         assert.equal(response, false)
         done()
     })  
